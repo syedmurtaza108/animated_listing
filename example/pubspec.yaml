@@ -1,0 +1,25 @@
+name: animated_listing_example
+description: A new Flutter project.
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+
+  
+
+dev_dependencies:
+  animated_listing:
+    path: ../
+    
+  flutter_test:
+    sdk: flutter
+
+  
+  very_good_analysis: ^2.4.0
+
+flutter:
+  uses-material-design: true
