@@ -3,7 +3,13 @@
 // found in the LICENSE file.
 
 ///Animations types used for listing items
-enum AnimatedListingType{
+///
+///* [fadeTransition] renders widgets with gradually incremented opacity.
+///* [animatedSize] renders widgets with gradually incremented size.
+enum AnimatedListingType {
   fadeTransition,
   animatedSize,
+  elevation,
+  backColor,
+  shadowColor,
 }

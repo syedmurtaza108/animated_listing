@@ -26,12 +26,12 @@ class _AnimatedListingExampleState extends State<AnimatedListingExample> {
     return MaterialApp(
       home: Scaffold(
         body: AnimatedListingWidget(
-          itemBuilder: (_, i) {
-            return ItemWidget(item: list[i]);
-          },
+          itemBuilder: (_, i) => ItemWidget(item: list[i]),
           itemsCount: list.length,
           separatorBuilder: (_, __) => const Divider(),
-          animatedListingType: AnimatedListingType.animatedSize,
+          animatedListingType: AnimatedListingType.elevation,
+          animationDuration: const Duration(seconds: 5),
+          animatedResizeOptions: const AnimatedResizeOptions(finalHeight: 50),
         ),
       ),
     );
